@@ -1,0 +1,24 @@
+[user]
+    email = veiset@gmail.com
+    name = Vegard Veiset
+
+[github]
+    user = veiset
+
+[color]
+    ui = true
+
+[alias]  
+    ci = commit -am  
+    co = checkout  
+    st = status  
+    praise = blame  
+
+[color]  
+    branch = auto  
+
+[status]  
+    color = auto 
+
+[push]
+	default = simple
