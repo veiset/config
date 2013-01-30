@@ -87,5 +87,8 @@ let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_MultipleCompileFormats='dvi,pdf'
 
-" Thesaurus word file
-set thesaurus+=/home/vz/.vim/thesaurus/mthesaur.txt
+
+" 80 char width marker
+highlight ColorColumn ctermbg=black guibg=black
+set colorcolumn=81
+
