@@ -82,4 +82,4 @@ let g:Tex_MultipleCompileFormats='dvi,pdf'
 
 " 80 char width marker
 highlight ColorColumn ctermbg=235
-let &colorcolumn=join(range(81,999),",") " 80 is last valid column 
+let &colorcolumn=join(range(81,120),",") " 80 is last valid column 
