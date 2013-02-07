@@ -1,0 +1,8 @@
+bindkey -k k7 prev  # F7 next
+bindkey -k k8 next  # F8 prev
+
+startup_message off # Turn off the splash screen
+
+term screen-256color
+hardstatus alwayslastline
+hardstatus string '%{= kB}%H%= %?%-w%?(%n %t%?(%u)%?)%?%+w%?%?%= %c'
