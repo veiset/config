@@ -83,3 +83,18 @@ let g:Tex_MultipleCompileFormats='dvi,pdf'
 " 80 char width marker
 highlight ColorColumn ctermbg=235
 let &colorcolumn=join(range(81,120),",") " 80 is last valid column 
+
+
+" status line
+set laststatus=2
+set statusline=%t       "tail of the filename
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
+set statusline+=%{&ff}] "file format
+set statusline+=%h      "help file flag
+set statusline+=%m      "modified flag
+set statusline+=%r      "read only flag
+set statusline+=%y      "filetype
+set statusline+=%=      "left/right separator
+set statusline+=%c,     "cursor column
+set statusline+=%l/%L   "cursor line/total lines
+set statusline+=\ %P    "percent through file
