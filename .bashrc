@@ -21,6 +21,30 @@ alias gpu=" cat /sys/kernel/debug/dri/0/radeon_pm_info /sys/class/drm/card0/devi
 alias cgit="cd /home/vz/dev/git/"
 alias cma="cd /home/vz/dev/git/master/"
 alias cthe="cd /home/vz/dev/git/master/thesis"
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias p='python2'
+alias p3='python3'
+
+# pretty colors
+alias ls='ls --color=auto'
+alias egrep='egrep --color=auto'
+alias grep='grep --color=auto'
 
 # toggle keyboard layout with caps lock
 alias caps="setxkbmap -layout \"us, no\" -option \"grp:caps_toggle\""
+
+# PS1
+function subLevel {
+   pwd | grep -o '/' | wc -l
+}
+
+PS1='[\D{%H:%M} \u@\h:`subLevel` \W]\$ '
+
+# auto complete
+complete -cf sudo
+complete -cf man
+
+# editor
+EDITOR=vim ; export EDITOR
