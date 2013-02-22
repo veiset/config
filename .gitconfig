@@ -20,7 +20,8 @@
     br = branch
     mg = merge
     praise = blame  
-    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    hist = log --all --pretty=format:\"%h %ad  %d %s [%an]\" --graph --date=short 
+    graph = log --graph --all --decorate --oneline
 
 [color]  
     branch = auto  
