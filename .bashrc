@@ -59,7 +59,6 @@ watchdir() {
     done
 }
 watchtests() { 
-    watchstuff test/ py.test -v test/ 
+    watchdir test/ py.test -v test/ 
 }
-alias watchdir=watchstuff
 
