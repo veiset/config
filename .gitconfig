@@ -15,7 +15,7 @@
 [alias]  
     ci = commit -am  
     co = checkout  
-    st = !git branch && git status  
+    st = !git branch && echo "" && git status  
     praise = blame  
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 
