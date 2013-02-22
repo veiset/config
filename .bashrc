@@ -48,3 +48,15 @@ complete -cf man
 
 # editor
 EDITOR=vim ; export EDITOR
+
+# watch a folder for changes and execute a command, eg:
+# watchstuff test/ py.test -v test/
+watchdir() {
+    while true; do
+        change=$(inotifywait -e close_write,moved_to,create $1)
+        clear
+        ${*:2}
+    done
+}
+watchtests() { watchstuff test/ py.test -v test/ }
+alias watchdir=watchstuff
