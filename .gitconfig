@@ -16,6 +16,8 @@
     ci = commit -am  
     co = checkout  
     st = !git branch && echo "" && git status  
+    br = branch
+    mg = merge
     praise = blame  
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 
