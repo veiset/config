@@ -58,5 +58,8 @@ watchdir() {
         ${*:2}
     done
 }
-watchtests() { watchstuff test/ py.test -v test/ }
+watchtests() { 
+    watchstuff test/ py.test -v test/ 
+}
 alias watchdir=watchstuff
+
