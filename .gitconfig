@@ -21,7 +21,7 @@
     mg = merge
     praise = blame  
     hist = log --all --pretty=format:\"%h %ad  %d %s [%an]\" --graph --date=short 
-    graph = log --graph --all --decorate --oneline
+    graph = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 
 [color]  
     branch = auto  
