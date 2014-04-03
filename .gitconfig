@@ -36,3 +36,5 @@
 
 [advice]
 	statushints = false
+[core]
+	editor = vim
